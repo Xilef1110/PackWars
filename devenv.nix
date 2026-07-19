@@ -13,6 +13,12 @@
     };
   };
 
+  packages = with pkgs; [
+    ty
+    ruff
+    python314Packages.jedi-language-server
+  ];
+
   scripts.hello.exec = "uv run python hello.py";
 
   enterShell = ''
