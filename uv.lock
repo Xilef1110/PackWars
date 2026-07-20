@@ -6,3 +6,18 @@ requires-python = ">=3.13"
 name = "pwar"
 version = "0.1.0"
 source = { virtual = "." }
+dependencies = [
+    { name = "scrython" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "scrython", specifier = ">=2.2.0" }]
+
+[[package]]
+name = "scrython"
+version = "2.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/40/c2/9d1cee83b445541d9fd2db46e32d64cd1593cbfc64ff12880ab7b2e8d80b/scrython-2.2.0.tar.gz", hash = "sha256:5c6e4ffac1b646435bfc80cfc40ea565334df7a544e8eb4f26d879a675813ccd", size = 73781, upload-time = "2026-06-09T21:27:52.551Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/31/7c/dd2ef766fc8c2044b562bc451a93481decf52a7f82c1c32b78af39bfe6dc/scrython-2.2.0-py3-none-any.whl", hash = "sha256:9d390088e3d5229b3bd1d44cfe9bb14ab280279f2c0db0be92b6da95d579d15c", size = 52084, upload-time = "2026-06-09T21:27:51.447Z" },
+]
